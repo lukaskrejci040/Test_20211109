@@ -10,6 +10,7 @@ namespace Test_20211109
     {
         public string jmeno;
         public float zustatek;
+        
 
         public Ucet(string jmeno, float zustatek)
         {
@@ -35,10 +36,10 @@ namespace Test_20211109
             {
                 zustatek = 0;
             }
-            else if ()
-            {
+            //else if ()
+            //{
 
-            }
+            //}
 
             
             else 
