@@ -1,6 +1,6 @@
 ﻿namespace Test_20211109
 {
-    partial class Form1
+    partial class limitVyberuN
     {
         /// <summary>
         /// Required designer variable.
@@ -39,13 +39,17 @@
             this.vyberN = new System.Windows.Forms.NumericUpDown();
             this.platbaN = new System.Windows.Forms.NumericUpDown();
             this.platbaB = new System.Windows.Forms.Button();
-            this.limitPlatbyB = new System.Windows.Forms.Button();
             this.limitPlatbyN = new System.Windows.Forms.NumericUpDown();
             this.nefunguje = new System.Windows.Forms.Label();
+            this.limitPlatby = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.vkladN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vyberN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platbaN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.limitPlatbyN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,6 +94,11 @@
             // vkladN
             // 
             this.vkladN.Location = new System.Drawing.Point(145, 132);
+            this.vkladN.Maximum = new decimal(new int[] {
+            -1530494976,
+            232830,
+            0,
+            0});
             this.vkladN.Name = "vkladN";
             this.vkladN.Size = new System.Drawing.Size(120, 20);
             this.vkladN.TabIndex = 4;
@@ -128,6 +137,11 @@
             // vyberN
             // 
             this.vyberN.Location = new System.Drawing.Point(150, 161);
+            this.vyberN.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
             this.vyberN.Name = "vyberN";
             this.vyberN.Size = new System.Drawing.Size(120, 20);
             this.vyberN.TabIndex = 9;
@@ -135,6 +149,11 @@
             // platbaN
             // 
             this.platbaN.Location = new System.Drawing.Point(628, 164);
+            this.platbaN.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
             this.platbaN.Name = "platbaN";
             this.platbaN.Size = new System.Drawing.Size(120, 20);
             this.platbaN.TabIndex = 11;
@@ -150,16 +169,6 @@
             this.platbaB.UseVisualStyleBackColor = true;
             this.platbaB.Click += new System.EventHandler(this.platbaB_Click);
             // 
-            // limitPlatbyB
-            // 
-            this.limitPlatbyB.AutoSize = true;
-            this.limitPlatbyB.Location = new System.Drawing.Point(531, 132);
-            this.limitPlatbyB.Name = "limitPlatbyB";
-            this.limitPlatbyB.Size = new System.Drawing.Size(75, 23);
-            this.limitPlatbyB.TabIndex = 12;
-            this.limitPlatbyB.Text = "Limit platby";
-            this.limitPlatbyB.UseVisualStyleBackColor = true;
-            // 
             // limitPlatbyN
             // 
             this.limitPlatbyN.Location = new System.Drawing.Point(612, 135);
@@ -170,20 +179,62 @@
             // nefunguje
             // 
             this.nefunguje.AutoSize = true;
-            this.nefunguje.Location = new System.Drawing.Point(635, 139);
+            this.nefunguje.Location = new System.Drawing.Point(678, 119);
             this.nefunguje.Name = "nefunguje";
             this.nefunguje.Size = new System.Drawing.Size(54, 13);
             this.nefunguje.TabIndex = 14;
             this.nefunguje.Text = "nefunguje";
             // 
-            // Form1
+            // limitPlatby
+            // 
+            this.limitPlatby.AutoSize = true;
+            this.limitPlatby.Location = new System.Drawing.Point(541, 137);
+            this.limitPlatby.Name = "limitPlatby";
+            this.limitPlatby.Size = new System.Drawing.Size(59, 13);
+            this.limitPlatby.TabIndex = 15;
+            this.limitPlatby.Text = "Limit platby";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(50, 201);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Limit výběru";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(128, 199);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(213, 222);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "nefunguje";
+            // 
+            // limitVyberuN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.limitPlatby);
             this.Controls.Add(this.nefunguje);
             this.Controls.Add(this.limitPlatbyN);
-            this.Controls.Add(this.limitPlatbyB);
             this.Controls.Add(this.platbaN);
             this.Controls.Add(this.platbaB);
             this.Controls.Add(this.vyberN);
@@ -195,13 +246,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "limitVyberuN";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vkladN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vyberN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platbaN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.limitPlatbyN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,9 +272,12 @@
         private System.Windows.Forms.NumericUpDown vyberN;
         private System.Windows.Forms.NumericUpDown platbaN;
         private System.Windows.Forms.Button platbaB;
-        private System.Windows.Forms.Button limitPlatbyB;
         private System.Windows.Forms.NumericUpDown limitPlatbyN;
         private System.Windows.Forms.Label nefunguje;
+        private System.Windows.Forms.Label limitPlatby;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label5;
     }
 }
 

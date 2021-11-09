@@ -35,7 +35,13 @@ namespace Test_20211109
             {
                 zustatek = 0;
             }
-            else
+            else if ()
+            {
+
+            }
+
+            
+            else 
             {
                 zustatek -= mnozstvi;
             }
