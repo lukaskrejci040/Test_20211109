@@ -52,7 +52,13 @@ namespace Test_20211109
 
 
 
-            //alespoň za 4 prosím
+            
         }
+
+        //private void limitVyberu_ValueChanged(object sender, EventArgs e)
+        //{
+        //    ucet1.Limit((int)limitVyberuN.Value);
+        //    Vypis(ucet1);
+        //}
     }
 }

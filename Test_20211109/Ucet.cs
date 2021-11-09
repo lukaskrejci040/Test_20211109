@@ -10,6 +10,7 @@ namespace Test_20211109
     {
         public string jmeno;
         public float zustatek;
+        //public float limit;
         
 
         public Ucet(string jmeno, float zustatek)
@@ -36,10 +37,7 @@ namespace Test_20211109
             {
                 zustatek = 0;
             }
-            //else if ()
-            //{
-
-            //}
+            
 
             
             else 
@@ -58,9 +56,19 @@ namespace Test_20211109
                 zustatek -= mnozstvi;
             }
         }
+        //public void Limit(int mnozstvi)
+        //{
+        //    if (zustatek > mnozstvi)
+        //    {
+        //        zustatek = mnozstvi;
+        //    }
+        //    else
+        //    {
+        //        zustatek = zustatek;
+        //    }
+        //}
     }
-}//alespoň za 4 prosím
-
+}
 
 
 

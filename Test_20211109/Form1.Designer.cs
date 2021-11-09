@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.NumericUpDown limitVyberu;
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,13 +44,13 @@
             this.nefunguje = new System.Windows.Forms.Label();
             this.limitPlatby = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
+            limitVyberu = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.vkladN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vyberN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platbaN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.limitPlatbyN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(limitVyberu)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -203,17 +204,18 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Limit výběru";
             // 
-            // numericUpDown1
+            // limitVyberu
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(128, 199);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            limitVyberu.Location = new System.Drawing.Point(128, 199);
+            limitVyberu.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 17;
+            limitVyberu.Name = "limitVyberu";
+            limitVyberu.Size = new System.Drawing.Size(120, 20);
+            limitVyberu.TabIndex = 17;
+            
             // 
             // label5
             // 
@@ -230,7 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(limitVyberu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.limitPlatby);
             this.Controls.Add(this.nefunguje);
@@ -253,7 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vyberN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platbaN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.limitPlatbyN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(limitVyberu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +278,6 @@
         private System.Windows.Forms.Label nefunguje;
         private System.Windows.Forms.Label limitPlatby;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label5;
     }
 }
