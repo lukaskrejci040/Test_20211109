@@ -20,9 +20,9 @@ namespace Test_20211109
         }
 
 
-        public void Vklad(int mnozstvi)
+        public void Vklad(int mnozstvi)     
         {
-            if(zustatek + mnozstvi > 200000)
+            if(mnozstvi > 200000)
             {
                 zustatek = 200000;
             }
